@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonPepperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza de Pepperoni"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonMargherita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Margherita"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/buttonFrangoCatupiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza de Frango com Catupiry"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campos de texto para pedido -->
+    <EditText
+        android:id="@+id/editTextTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tamanho (Pequena, Média, Grande)"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Observações"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RadioGroup para seleção de borda -->
+    <RadioGroup
+        android:id="@+id/radioGroupBorda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borda Normal"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonRecheada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borda Recheada"/>
+
+    </RadioGroup>
+
+    <!-- Imagens de pizzas -->
+
+    <!-- Switch para opção de entrega -->
+
+    <ImageView
+        android:id="@+id/imageViewPizza"
+        android:layout_width="274dp"
+        android:layout_height="206dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/pizza_pepperoni" />
+
+    <Switch
+        android:id="@+id/switchEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrega em domicílio"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
